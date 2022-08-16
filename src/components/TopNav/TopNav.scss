@@ -1,0 +1,15 @@
+@import "../Variables.scss";
+
+#TopNav {
+  display: flex;
+  background-color: $lightGray;
+  div {
+    padding: 10px;
+  }
+  .inactive {
+    background-color: $lightBlue;
+  }
+  .active {
+    background-color: white;
+  }
+}

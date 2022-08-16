@@ -1,3 +1,17 @@
+#TopNav {
+  display: flex;
+  background-color: #e7eef6;
+}
+#TopNav div {
+  padding: 10px;
+}
+#TopNav .inactive {
+  background-color: #84cbfb;
+}
+#TopNav .active {
+  background-color: white;
+}
+
 @font-face {
   font-family: "Muli Regular";
   font-style: normal;
@@ -23,8 +37,9 @@
   src: local("Muli SemiBold"), url("./fonts/muli-cufonfonts-webfont/Muli-SemiBold.woff") format("woff");
 }
 * {
-  background-color: #84cbfb;
-  font-family: Muli SemiBold, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /*# sourceMappingURL=App.css.map */

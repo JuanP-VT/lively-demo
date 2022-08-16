@@ -1,5 +1,6 @@
-@import "Variables";
-
+@use "./components/TopNav/TopNav.scss";
+@import "./components/Variables.scss";
+// Declaration for Muli font family
 @font-face {
   font-family: "Muli Regular";
   font-style: normal;
@@ -29,6 +30,7 @@
     url("./fonts/muli-cufonfonts-webfont/Muli-SemiBold.woff") format("woff");
 }
 * {
-  background-color: $lightBlue;
-  font-family: Muli SemiBold, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
