@@ -99,6 +99,22 @@
   background-position: center;
 }
 
+#individualsHeader {
+  display: flex;
+  padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
+  justify-content: space-between;
+  font-family: Muli Light;
+  color: #6f7d88;
+}
+#individualsHeader div {
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  font-weight: 600;
+}
+
 @font-face {
   font-family: "Muli Regular";
   font-style: normal;
