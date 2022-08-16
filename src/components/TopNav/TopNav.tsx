@@ -19,7 +19,11 @@ function TopNav({ setCurrentRoute, currentRoute }: Props) {
       businessContainer.classList.remove("active");
       individualsContainer.classList.add("active");
     }
-    if (currentRoute === "/business" || currentRoute === "/") {
+    if (
+      currentRoute === "/business" ||
+      currentRoute === "/" ||
+      currentRoute === "/lively-demo/"
+    ) {
       businessContainer.classList.add("active");
       individualsContainer.classList.remove("active");
     }
