@@ -2,8 +2,10 @@
   display: flex;
   background-color: #e7eef6;
 }
-#TopNav div {
+#TopNav a {
   padding: 10px;
+  text-decoration: none;
+  color: black;
 }
 #TopNav .inactive {
   background-color: #84cbfb;

@@ -3,8 +3,10 @@
 #TopNav {
   display: flex;
   background-color: $lightGray;
-  div {
+  a {
     padding: 10px;
+    text-decoration: none;
+    color: black;
   }
   .inactive {
     background-color: $lightBlue;

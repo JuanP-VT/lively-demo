@@ -1,12 +1,15 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-type Props = {};
-
-function TopNav({}: Props) {
+function TopNav() {
   return (
     <div id="TopNav">
-      <div id="forBusiness">For Business</div>
-      <div id="forIndividuals">For Individuals</div>
+      <Link id="forBusiness" to="/business">
+        For Business
+      </Link>
+      <Link id="forIndividuals" to="/individuals">
+        For Individuals
+      </Link>
     </div>
   );
 }
