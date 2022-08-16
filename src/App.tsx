@@ -15,6 +15,7 @@ function App() {
       <TopNav setCurrentRoute={setCurrentRoute} currentRoute={CurrentRoute} />
       <Routes>
         <Route path="/" element={<ForBusiness />} />
+        <Route path="/lively-demo" element={<ForBusiness />} />
         <Route path="/business" element={<ForBusiness />} />
         <Route path="/individuals" element={<ForIndividuals />} />
       </Routes>

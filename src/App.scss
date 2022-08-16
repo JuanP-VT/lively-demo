@@ -36,7 +36,10 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+body {
+  height: 100vh;
+  overflow: hidden;
+}
 .greenBtn {
   font-family: $light;
   background-color: $green;
