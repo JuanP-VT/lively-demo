@@ -1,7 +1,7 @@
 import React from "react";
 
 function ForIndividuals() {
-  return <div>ForIndividuals</div>;
+  return <div id="Individuals">ForIndividuals</div>;
 }
 
 export default ForIndividuals;

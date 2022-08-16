@@ -17,6 +17,47 @@
   background-color: white;
 }
 
+#Business {
+  display: flex;
+  flex-direction: column;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#businessHeader {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+  font-family: Muli Light;
+}
+#businessHeader div {
+  display: flex;
+  gap: 20px;
+  align-self: center;
+  font-weight: 600;
+}
+#businessHeader .left div {
+  background-color: #84cbfb;
+  padding: 20px;
+  color: #4196ca;
+}
+#businessHeader .right {
+  color: #6f7d88;
+}
+#businessHeader .right .blog {
+  background-color: #84cbfb;
+  padding: 20px;
+  color: #4196ca;
+}
+#businessHeader .right .sales {
+  background-color: #19a69e;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  color: white;
+}
+
 @font-face {
   font-family: "Muli Regular";
   font-style: normal;
