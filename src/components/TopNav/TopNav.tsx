@@ -5,32 +5,34 @@ interface Props {
   setCurrentRoute: React.Dispatch<React.SetStateAction<string>>;
   currentRoute: string;
 }
-// This function reads from state the current route and then
-// changes the css classes of the two anchor elements accordingly
+
 function TopNav({ setCurrentRoute, currentRoute }: Props) {
+  // This function reads the current route from state and then
+  // toggles a css class on the anchor elements accordingly
   useEffect(() => {
-    const businessContainer = document.querySelector(
+    const businessAnchor = document.querySelector(
       "#ForBusiness"
     ) as HTMLAnchorElement;
-    const individualsContainer = document.querySelector(
+    const individualsAnchor = document.querySelector(
       "#ForIndividuals"
     ) as HTMLAnchorElement;
     if (currentRoute === "/individuals") {
-      businessContainer.classList.remove("active");
-      individualsContainer.classList.add("active");
+      businessAnchor.classList.remove("active");
+      individualsAnchor.classList.add("active");
     }
     if (
       currentRoute === "/business" ||
       currentRoute === "/" ||
       currentRoute === "/lively-demo/"
     ) {
-      businessContainer.classList.add("active");
-      individualsContainer.classList.remove("active");
+      businessAnchor.classList.add("active");
+      individualsAnchor.classList.remove("active");
     }
   }, [currentRoute]);
 
-  // This function is will save in the current route in state
+  // This function saves the current route in state
   // whenever one of the two anchor links are clicked
+  // Anchor elements have a data-route attribute
   function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     const target = e.target as HTMLAnchorElement;
     const route = target.getAttribute("data-route") as string;
