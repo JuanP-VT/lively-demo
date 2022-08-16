@@ -49,14 +49,6 @@
   padding: 20px;
   color: #4196ca;
 }
-#businessHeader .right .sales {
-  background-color: #19a69e;
-  padding: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  border-radius: 5px;
-  color: white;
-}
 
 #Business .content {
   height: 900px;
@@ -113,6 +105,47 @@
   gap: 20px;
   align-self: center;
   font-weight: 600;
+}
+
+#Individuals .content {
+  height: 900px;
+  background-color: #e7eef6;
+  display: flex;
+  padding: 80px;
+}
+#Individuals .content div {
+  width: 40%;
+  height: 100%;
+}
+#Individuals .content .left {
+  margin-left: 200px;
+}
+#Individuals .content .left .header {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-family: Muli Bold;
+  color: rgb(15, 19, 19);
+}
+#Individuals .content .left .p {
+  font-family: Muli Light;
+  width: 80%;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+#Individuals .content .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Individuals .content .right .portrait {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(/src//img/individual.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 @font-face {
