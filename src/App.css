@@ -6,8 +6,6 @@
   padding: 10px;
   text-decoration: none;
   color: black;
-}
-#TopNav .inactive {
   background-color: #84cbfb;
 }
 #TopNav .active {
