@@ -53,3 +53,107 @@ body {
   height: 40px;
   align-self: center;
 }
+
+// Media Queries
+
+@media (max-width: 1550px) {
+  #Business {
+    .content {
+      .left {
+        .header {
+          font-size: 3rem;
+        }
+      }
+      .right {
+        .portrait {
+          width: 400px;
+          height: 400px;
+          margin-bottom: 50px;
+        }
+      }
+    }
+  }
+  #Individuals {
+    .content {
+      .left {
+        .header {
+          font-size: 3rem;
+        }
+      }
+      .right {
+        .portrait {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1415px) {
+  #Business {
+    .content {
+      .left {
+        .header {
+          font-size: 2.5rem;
+        }
+      }
+      .right {
+        .portrait {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+  }
+  #Individuals {
+    .content {
+      .left {
+        .header {
+          font-size: 2.5rem;
+        }
+      }
+      .right {
+        .portrait {
+          width: 400px;
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1415px) {
+  #Business {
+    .content {
+      .left {
+        .header {
+          font-size: 2.5rem;
+        }
+      }
+      .right {
+        .portrait {
+          width: 300px;
+          height: 300px;
+          margin-bottom: 120px;
+        }
+      }
+    }
+  }
+  #Individuals {
+    .content {
+      .left {
+        .header {
+          font-size: 2.5rem;
+        }
+      }
+      .right {
+        .portrait {
+          width: 300px;
+          height: 300px;
+          margin-bottom: 120px;
+        }
+      }
+    }
+  }
+}

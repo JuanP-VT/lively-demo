@@ -148,6 +148,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  margin-bottom: 60px;
 }
 
 @font-face {
@@ -197,6 +198,58 @@ body {
   border: none;
   height: 40px;
   align-self: center;
+}
+
+@media (max-width: 1550px) {
+  #Business .content .left .header {
+    font-size: 3rem;
+  }
+  #Business .content .right .portrait {
+    width: 400px;
+    height: 400px;
+    margin-bottom: 50px;
+  }
+  #Individuals .content .left .header {
+    font-size: 3rem;
+  }
+  #Individuals .content .right .portrait {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 1415px) {
+  #Business .content .left .header {
+    font-size: 2.5rem;
+  }
+  #Business .content .right .portrait {
+    width: 400px;
+    height: 400px;
+  }
+  #Individuals .content .left .header {
+    font-size: 2.5rem;
+  }
+  #Individuals .content .right .portrait {
+    width: 400px;
+    height: 400px;
+  }
+}
+@media (max-width: 1415px) {
+  #Business .content .left .header {
+    font-size: 2.5rem;
+  }
+  #Business .content .right .portrait {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 120px;
+  }
+  #Individuals .content .left .header {
+    font-size: 2.5rem;
+  }
+  #Individuals .content .right .portrait {
+    width: 300px;
+    height: 300px;
+    margin-bottom: 120px;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
