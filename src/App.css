@@ -4,9 +4,14 @@
 }
 #TopNav a {
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   text-decoration: none;
   color: black;
   background-color: #84cbfb;
+  font-family: Muli Light;
+  font-size: 14px;
+  border-radius: 3px;
 }
 #TopNav .active {
   background-color: white;

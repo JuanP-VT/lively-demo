@@ -5,9 +5,14 @@
   background-color: $lightGray;
   a {
     padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
     text-decoration: none;
     color: black;
     background-color: $lightBlue;
+    font-family: $light;
+    font-size: 14px;
+    border-radius: 3px;
   }
   .active {
     background-color: white;
