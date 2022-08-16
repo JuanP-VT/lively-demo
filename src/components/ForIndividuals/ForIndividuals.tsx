@@ -10,7 +10,7 @@ function ForIndividuals() {
             alt="lively logo"
           />
           <div>HSA Features</div>
-          <div>Transfer Hsa</div>
+          <div>Transfer HSA</div>
           <div>Invest HSA</div>
           <div>Pricing</div>
         </div>

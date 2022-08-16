@@ -29,6 +29,7 @@
   padding-right: 40px;
   justify-content: space-between;
   font-family: Muli Light;
+  height: 100px;
 }
 #businessHeader div {
   display: flex;
@@ -99,6 +100,7 @@
   justify-content: space-between;
   font-family: Muli Light;
   color: #6f7d88;
+  height: 100px;
 }
 #individualsHeader div {
   display: flex;
