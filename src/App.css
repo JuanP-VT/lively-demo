@@ -20,13 +20,13 @@
 #Business {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 
 #businessHeader {
   display: flex;
   padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   justify-content: space-between;
   font-family: Muli Light;
 }
@@ -58,6 +58,47 @@
   color: white;
 }
 
+#Business .content {
+  height: 800px;
+  background-color: #e7eef6;
+  display: flex;
+  padding: 80px;
+}
+#Business .content div {
+  width: 40%;
+  height: 100%;
+}
+#Business .content .left {
+  margin-left: 200px;
+}
+#Business .content .left .header {
+  margin-top: 150px;
+  margin-bottom: 20px;
+  font-size: 3.5rem;
+  font-family: Muli Bold;
+  color: rgb(15, 19, 19);
+}
+#Business .content .left .p {
+  font-family: Muli Light;
+  width: 80%;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+#Business .content .right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#Business .content .right .portrait {
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background-image: url(/src//img/business.avif);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 @font-face {
   font-family: "Muli Regular";
   font-style: normal;
@@ -86,6 +127,20 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+}
+
+.greenBtn {
+  font-family: Muli Light;
+  background-color: #19a69e;
+  padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 5px;
+  color: white;
+  outline: none;
+  border: none;
+  height: 40px;
+  align-self: center;
 }
 
 /*# sourceMappingURL=App.css.map */

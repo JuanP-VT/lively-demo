@@ -3,12 +3,12 @@
 #Business {
   display: flex;
   flex-direction: column;
-  padding-left: 40px;
-  padding-right: 40px;
 }
 #businessHeader {
   display: flex;
   padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   justify-content: space-between;
   font-family: $light;
 
@@ -39,6 +39,48 @@
       padding-right: 20px;
       border-radius: 5px;
       color: white;
+    }
+  }
+}
+#Business {
+  .content {
+    height: 800px;
+    background-color: $lightGray;
+    display: flex;
+    padding: 80px;
+    div {
+      width: 40%;
+      height: 100%;
+    }
+    .left {
+      margin-left: 200px;
+      .header {
+        margin-top: 150px;
+        margin-bottom: 20px;
+        font-size: 3.5rem;
+        font-family: $bold;
+        color: rgb(15, 19, 19);
+      }
+      .p {
+        font-family: $light;
+        width: 80%;
+        margin-bottom: 40px;
+        font-weight: 600;
+      }
+    }
+    .right {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .portrait {
+        width: 500px;
+        height: 500px;
+        border-radius: 50%;
+        background-image: url(/src//img/business.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
   }
 }
