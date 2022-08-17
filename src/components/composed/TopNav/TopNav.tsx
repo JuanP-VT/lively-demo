@@ -36,7 +36,6 @@ function TopNav({ setCurrentRoute, currentRoute }: Props) {
   function handleClick(e: React.MouseEvent<HTMLAnchorElement, MouseEvent>) {
     const target = e.target as HTMLAnchorElement;
     const route = target.getAttribute("data-route") as string;
-    console.log(route);
     setCurrentRoute(route);
   }
   return (

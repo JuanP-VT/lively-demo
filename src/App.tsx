@@ -9,7 +9,6 @@ function App() {
   // This saves the current route in state
   const location = useLocation();
   const [CurrentRoute, setCurrentRoute] = useState(location.pathname);
-  console.log(location.pathname);
   return (
     <div className="App">
       <TopNav setCurrentRoute={setCurrentRoute} currentRoute={CurrentRoute} />
