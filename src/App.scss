@@ -1,7 +1,7 @@
-@use "./components/TopNav/TopNav.scss";
-@use "./components/ForBusiness/ForBusiness.scss";
-@use "./components//ForIndividuals/ForIndividuals.scss";
-@import "./components/Variables.scss";
+@use "./components/composed/TopNav/TopNav.scss";
+@use "./components/composed/ForBusiness/ForBusiness.scss";
+@use "./components/composed/ForIndividuals/ForIndividuals.scss";
+@import "./Variables.scss";
 // Declaration for Muli font family
 @font-face {
   font-family: "Muli Regular";

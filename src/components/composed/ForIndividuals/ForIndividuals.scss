@@ -1,16 +1,13 @@
-@import "../Variables.scss";
+@import "../../../Variables.scss";
 
-#Business {
-  display: flex;
-  flex-direction: column;
-}
-#businessHeader {
+#individualsHeader {
   display: flex;
   padding: 20px;
   padding-left: 40px;
   padding-right: 40px;
   justify-content: space-between;
   font-family: $light;
+  color: $greyColor;
   height: 100px;
   div {
     display: flex;
@@ -18,23 +15,9 @@
     align-self: center;
     font-weight: 600;
   }
-  .left {
-    div {
-      background-color: $lightBlue;
-      padding: 20px;
-      color: $dimColor;
-    }
-  }
-  .right {
-    color: $greyColor;
-    .blog {
-      background-color: $lightBlue;
-      padding: 20px;
-      color: $dimColor;
-    }
-  }
 }
-#Business {
+
+#Individuals {
   .content {
     height: 900px;
     background-color: $lightGray;
@@ -68,10 +51,11 @@
         width: 500px;
         height: 500px;
         border-radius: 50%;
-        background-image: url(/src//img/business.avif);
+        background-image: url(/src//img/individual.avif);
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
+        margin-bottom: 60px;
       }
     }
   }

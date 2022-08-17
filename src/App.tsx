@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import ForBusiness from "./components/ForBusiness/ForBusiness";
-import ForIndividuals from "./components/ForIndividuals/ForIndividuals";
-import TopNav from "./components/TopNav/TopNav";
+import ForBusiness from "./components/composed/ForBusiness/ForBusiness";
+import ForIndividuals from "./components/composed/ForIndividuals/ForIndividuals";
+import TopNav from "./components/composed/TopNav/TopNav";
 import { useLocation } from "react-router-dom";
 function App() {
   // This saves the current route in state
