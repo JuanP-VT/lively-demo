@@ -51,11 +51,22 @@
         width: 500px;
         height: 500px;
         border-radius: 50%;
-        background-image: url(/src//img/individual.avif);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center;
-        margin-bottom: 60px;
+        position: relative;
+        img {
+          transition: 2000ms all ease-in-out;
+          border-radius: 50%;
+          height: 100%;
+          width: 100%;
+          opacity: 0;
+          position: absolute;
+          object-fit: cover;
+          box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
+            rgba(17, 17, 26, 0.1) 0px 16px 56px,
+            rgba(17, 17, 26, 0.1) 0px 24px 80px;
+        }
+        .active {
+          opacity: 1;
+        }
       }
     }
   }
