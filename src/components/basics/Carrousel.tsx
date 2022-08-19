@@ -4,40 +4,34 @@ type Props = {
   imgOneSrc: string;
   imgTwoSrc: string;
   imgThreeSrc: string;
+  CurrentIndex: number;
 };
 
-function Carrousel({ imgOneSrc, imgThreeSrc, imgTwoSrc }: Props) {
-  const [CurrentIndex, setCurrentIndex] = useState(1);
+function Carrousel({ CurrentIndex, imgOneSrc, imgThreeSrc, imgTwoSrc }: Props) {
+  //Init hook
   useEffect(() => {
-    // this will loop every 5 seconds
-    const interval = setInterval(() => {
-      const container = document.querySelector(
-        "#portraitInd"
-      ) as HTMLDivElement;
-      const childNodes = container.childNodes;
-      // remove all active class
-      childNodes.forEach((elem) => {
-        const target = elem as HTMLImageElement;
-        target.classList.remove("active");
-      });
-      // add active to current index
-      const target = childNodes[CurrentIndex] as HTMLImageElement;
-      target.classList.add("active");
-      if (CurrentIndex >= 2) {
-        setCurrentIndex(0);
-      } else {
-        setCurrentIndex((CurrentIndex) => CurrentIndex + 1);
-      }
-    }, 5000);
-    return () => clearInterval(interval);
+    const container = document.querySelector("#portraitInd") as HTMLDivElement;
+    const childNodes = container.childNodes;
+    // remove all 'active' classes
+    childNodes.forEach((elem) => {
+      const target = elem as HTMLImageElement;
+      target.classList.remove("active");
+    });
+    // add 'active' class to current element
+    const target = childNodes[CurrentIndex] as HTMLImageElement;
+    target.classList.add("active");
   }, [CurrentIndex]);
+
+  // This Hook is going to loop through each child node in the container
+  // toggling a 'active' class
+  useEffect(() => {}, [CurrentIndex]);
   return (
     <div className="portrait">
       <div className="portrait" id="portraitInd">
         <img
           src={imgOneSrc}
           alt="individual"
-          className="individualPortrait active"
+          className="individualPortrait"
           id="indOne"
         />
         <img

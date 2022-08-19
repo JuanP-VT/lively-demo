@@ -3,8 +3,10 @@ import imgOne from "../../img/business.avif";
 import imgTwo from "../../img/businessOne.avif";
 import imgThree from "../../img/businessTwo.avif";
 import Carrousel from "./Carrousel";
-
-function BusinessContent() {
+type Props = {
+  currentIndex: number;
+};
+function BusinessContent({ currentIndex }: Props) {
   return (
     <div className="content">
       <div className="left">
@@ -20,6 +22,7 @@ function BusinessContent() {
           imgOneSrc={imgOne}
           imgTwoSrc={imgTwo}
           imgThreeSrc={imgThree}
+          CurrentIndex={currentIndex}
         />
       </div>
     </div>

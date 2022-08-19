@@ -1,12 +1,14 @@
 import React from "react";
 import IndividualsContent from "../../basics/IndividualsContent";
 import IndividualsHeader from "../../basics/IndividualsHeader";
-
-function ForIndividuals() {
+type Props = {
+  currentIndex: number;
+};
+function ForIndividuals({ currentIndex }: Props) {
   return (
     <div id="Individuals">
       <IndividualsHeader />
-      <IndividualsContent />
+      <IndividualsContent currentIndex={currentIndex} />
     </div>
   );
 }

@@ -2,11 +2,14 @@ import React from "react";
 import BusinessContent from "../../basics/BusinessContent";
 import BusinessHeader from "../../basics/BusinessHeader";
 
-function ForBusiness() {
+type Props = {
+  currentIndex: number;
+};
+function ForBusiness({ currentIndex }: Props) {
   return (
     <div id="Business">
       <BusinessHeader />
-      <BusinessContent />
+      <BusinessContent currentIndex={currentIndex} />
     </div>
   );
 }
