@@ -9,9 +9,10 @@ function App() {
   // This saves the current route in state
   const location = useLocation();
   const [CurrentRoute, setCurrentRoute] = useState(location.pathname);
-  // This hook saves current index of carrousel
+  // This hook saves current index of  tne image carrousel
   const [CurrentIndex, setCurrentIndex] = useState(0);
-  // This hook handles current index of carrousel
+  // This hook select the current container of the image carrousel
+  // and toggles the 'active' class of the current index image.
   useEffect(() => {
     const interval = setInterval(() => {
       // Increase current index each loop
@@ -29,7 +30,7 @@ function App() {
         const target = elem as HTMLImageElement;
         target.classList.remove("active");
       });
-      // add active to current index
+      // add 'active' class to current index image
       const target = childNodes[CurrentIndex] as HTMLImageElement;
       target.classList.add("active");
     }, 5000);
