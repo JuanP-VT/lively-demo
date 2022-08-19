@@ -1,7 +1,4 @@
-import React, { useEffect, useState } from "react";
-import imgOne from "../../img/business.avif";
-import imgTwo from "../../img/businessOne.avif";
-import imgThree from "../../img/businessTwo.avif";
+import React from "react";
 import Carrousel from "./Carrousel";
 type Props = {
   currentIndex: number;
@@ -19,9 +16,9 @@ function BusinessContent({ currentIndex }: Props) {
       </div>
       <div className="right">
         <Carrousel
-          imgOneSrc={imgOne}
-          imgTwoSrc={imgTwo}
-          imgThreeSrc={imgThree}
+          imgOneSrc="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80"
+          imgTwoSrc="https://images.unsplash.com/photo-1611095790444-1dfa35e37b52?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1471&q=80"
+          imgThreeSrc="https://images.unsplash.com/photo-1600880292089-90a7e086ee0c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
           CurrentIndex={currentIndex}
         />
       </div>

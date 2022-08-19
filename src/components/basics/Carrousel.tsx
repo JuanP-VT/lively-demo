@@ -8,7 +8,7 @@ type Props = {
 };
 
 function Carrousel({ CurrentIndex, imgOneSrc, imgThreeSrc, imgTwoSrc }: Props) {
-  //Init hook
+  //Update current Image to display
   useEffect(() => {
     const container = document.querySelector("#portraitInd") as HTMLDivElement;
     const childNodes = container.childNodes;
@@ -21,10 +21,6 @@ function Carrousel({ CurrentIndex, imgOneSrc, imgThreeSrc, imgTwoSrc }: Props) {
     const target = childNodes[CurrentIndex] as HTMLImageElement;
     target.classList.add("active");
   }, [CurrentIndex]);
-
-  // This Hook is going to loop through each child node in the container
-  // toggling a 'active' class
-  useEffect(() => {}, [CurrentIndex]);
   return (
     <div className="portrait">
       <div className="portrait" id="portraitInd">
